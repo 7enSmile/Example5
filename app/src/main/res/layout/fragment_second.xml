@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSecond">
+
+    <TextView
+        android:id="@+id/textViewA"
+        android:layout_width="22dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:text="A"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/inputA"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/textViewB"
+        android:layout_width="22dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="70dp"
+        android:text="B"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/inputB"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="120dp"
+        android:text="A+B" />
+    <Button
+        android:id="@+id/buttonMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="160dp"
+        android:text="A-B" />
+    <Button
+        android:id="@+id/buttonUmn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="200dp"
+        android:text="A*B" />
+
+    <TextView
+        android:id="@+id/textResult2"
+        android:layout_width="151dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="240dp"
+        android:text="@string/result"
+        android:textSize="30sp" />
+
+</FrameLayout>

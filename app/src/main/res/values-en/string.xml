@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Example2</string>
+    <string name="name_in_app" translatable="false">Calculating the distance between points</string>
+    <string name="result" translatable="false">Result</string>
+    <string name="first_tchk" translatable="false">1 point</string>
+    <string name="second_tchk" translatable="false">2 point</string>
+    <string name="get_result" translatable="false">Calculation</string>
+    <string name="hisroy" translatable="false">History</string>
+    <string name="history_text_first" translatable="false">Result of first fragment:</string>
+    <string name="history_text_second" translatable="false">Result of second fragment:</string>
+
+</resources>

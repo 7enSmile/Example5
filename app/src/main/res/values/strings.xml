@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Пример2</string>
+    <string name="name_in_app" translatable="false">Рассчет расстояния между точками</string>
+    <string name="result" translatable="false">Результат</string>
+    <string name="first_tchk" translatable="false">1 точка</string>
+    <string name="second_tchk" translatable="false">2 точка</string>
+    <string name="get_result" translatable="false">Рассчет</string>
+    <string name="hisroy" translatable="false">История</string>
+    <string name="history_text_first" translatable="false">Результат 1 фрагмента:</string>
+    <string name="history_text_second" translatable="false">Результат 2 фрагмента:</string>
+    <string name="title_activity_service">ActivityService</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+</resources>
