@@ -17,10 +17,11 @@ import androidx.annotation.Nullable;
 import java.util.concurrent.TimeUnit;
 
 public class SomeService extends Service {
-    private static final String LOG_TAG ="hs" ;
+
     Context context;
     Thread thread;
     boolean running=true;
+    String text;
 
     public void onCreate() {
 
@@ -54,18 +55,21 @@ public class SomeService extends Service {
     }
 
     private void startWork()  {
+        final Handler handler=new Handler();
         thread=new Thread(new Runnable() {
             @Override
             public void run() {
-                for(int timer=0;timer<100;timer++){
+                for(int timer=1;timer<999999999;timer=timer*2){
                     if(!running){
                         break;
                     }
+                    text=Integer.toString(timer);
+                    handler.post(doUpdateGUI);
 
 
-                    Log.d("timer", String.valueOf(timer));
+
                     try {
-                        TimeUnit.SECONDS.sleep(1);
+                        TimeUnit.SECONDS.sleep(3);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
 
@@ -83,6 +87,11 @@ public class SomeService extends Service {
 
 
     }
+    private Runnable doUpdateGUI = new Runnable() {
+        public void run() {
+            Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
+        }
+    };
 
 
 
