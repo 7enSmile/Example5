@@ -66,8 +66,6 @@ public class SomeService extends Service {
                     text=Integer.toString(timer);
                     handler.post(doUpdateGUI);
 
-
-
                     try {
                         TimeUnit.SECONDS.sleep(3);
                     } catch (InterruptedException e) {

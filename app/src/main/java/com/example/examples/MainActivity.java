@@ -109,6 +109,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             }
+            case R.id.menuBrowser:{
+                Intent intent=new Intent(this,BrowserActivity.class);
+                startActivity(intent);
+                break;
+            }
+
 
         }
         return true;

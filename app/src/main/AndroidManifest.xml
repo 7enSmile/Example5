@@ -5,16 +5,24 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Пример4"
+        android:label="Пример5"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityService"></activity>
+        <activity android:name=".ShareActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".BrowserActivity" />
+        <activity android:name=".ActivityService" />
 
         <service
             android:name=".SomeService"
-            android:enabled="true"
-            />
+            android:enabled="true" />
 
         <activity android:name=".HistoryActivity2" />
         <activity android:name=".MainActivity">

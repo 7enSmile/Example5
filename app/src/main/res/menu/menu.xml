@@ -11,4 +11,9 @@
         android:orderInCategory="1"
         android:title="Сервис"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/menuBrowser"
+        android:orderInCategory="1"
+        android:title="Браузер"
+        app:showAsAction="never" />
 </menu>
